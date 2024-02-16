@@ -1,3 +1,5 @@
+//Get CSRF Token
+
 ///(function() {
     function e(e, t, a) {
         return a === void 0 || 0 === +a ? Math[e](t) : (t = +t, a = +a, isNaN(t) || "number" != typeof a || 0 !== a % 1 ? 0 / 0 : (t = ("" + t).split("e"), t = Math[e](+(t[0] + "e" + (t[1] ? +t[1] - a : -a))), t = ("" + t).split("e"), +(t[0] + "e" + (t[1] ? +t[1] + a : a))))
@@ -1420,7 +1422,7 @@
                 desc: "Have GameBot roll an <n> sided die"
             }], _a = 0; 4 >= _a; _a++) $("[data-chatroom='" + _a + "'].chat-message").on("keydown", function(e) {
             return e.keyCode !== $.ui.keyCode.TAB && e.keyCode !== $.ui.keyCode.ENTER || !$(this).autocomplete("instance").menu.active ? void 0 : (e.preventDefault(), !1)
-        });/*.autocomplete({
+        }).autocomplete({
             delay: 0,
             minLength: 1,
             autoFocus: !0,
@@ -1435,7 +1437,7 @@
             }
         }).autocomplete("instance")._renderItem = function(e, t) {
             return $("<li>").append("<div><b>" + ut(t.label) + "</b><br>" + ut(t.desc) + "</div>").appendTo(e)
-        };*/
+        };
     Math.round10 || (Math.round10 = function(t, a) {
         return e("round", t, a)
     }), Math.floor10 || (Math.floor10 = function(t, a) {
@@ -2582,6 +2584,7 @@
         $("#nullChat input[name='message']").val("/race " + $(this).data("race") + " " + $(this).data("coin")), st($("#nullChat"))
     })
 ///})();
+
 var CryptoJS = CryptoJS || function(h, r) {
     var k = {},
         l = k.lib = {},
